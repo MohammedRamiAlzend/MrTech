@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Laptop extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'type',
+        'ram',
+        'ssd',
+        'processor_type',
+        'processor_speed',
+        'display_size_inch',
+        'display_size_sm',
+        'display_type',
+        'display_resolution',
+        'description'
+    ];
 }
