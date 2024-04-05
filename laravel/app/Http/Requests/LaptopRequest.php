@@ -34,4 +34,5 @@ class LaptopRequest extends FormRequest
             'description'=>'required'
         ];
     }
+
 }

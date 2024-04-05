@@ -16,17 +16,18 @@ class LaptopFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'type'=> fake()->randomAscii(),
-            'ram'=>fake()->randomNumber(3),
-            'ssd'=>fake()->randomNumber(4),
-            'processor_type'=>fake()->company,
-            'processor_speed'=>fake()->randomNumber(2)."GHZ",
-            'display_size_inch'=>fake()->randomNumber(4),
-            'display_size_sm'=>fake()->randomNumber(4),
-            'display_type'=>fake()->randomNumber(4),
-            'display_resolution'=>fake()->randomNumber(4),
-            'description'=>fake()->text(200)
-        ];
+        return([
+            'type' => fake()->randomElement(['Gaming', 'Business', 'Ultrabook']),
+            'ram' => fake()->randomElement(['4GB', '8GB', '16GB']),
+            'ssd' => fake()->randomElement(['128GB', '256GB', '512GB']),
+            'processor_type' => fake()->randomElement(['Intel Core i5', 'Intel Core i7', 'AMD Ryzen 7']),
+            'processor_speed' => fake()->randomFloat(2, 2.0, 4.5) . 'GHz',
+            'display_size_inch' => fake()->randomFloat(1, 13.3, 17.3),
+            'display_size_sm' => fake()->randomFloat(2, 33.78, 43.94),
+            'display_type' => fake()->randomElement(['LED', 'IPS', 'OLED']),
+            'display_resolution' => fake()->randomElement(['1920x1080', '2560x1440', '3840x2160']),
+            'description' => fake()->text,
+        ]);
+
     }
 }

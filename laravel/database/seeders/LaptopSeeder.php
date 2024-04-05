@@ -13,6 +13,6 @@ class LaptopSeeder extends Seeder
      */
     public function run(): void
     {
-        Laptop::factory(10)->create();
+        Laptop::factory(100)->create();
     }
 }
