@@ -9,6 +9,10 @@ class Laptop extends Model
 {
     use HasFactory;
     protected $fillable=[
+        'name',
+        'title',
+        'price',
+        'discount',
         'type',
         'ram',
         'ssd',
@@ -18,6 +22,7 @@ class Laptop extends Model
         'display_size_sm',
         'display_type',
         'display_resolution',
-        'description'
+        'description',
+
     ];
 }

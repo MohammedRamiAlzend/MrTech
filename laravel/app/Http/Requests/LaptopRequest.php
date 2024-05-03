@@ -22,16 +22,20 @@ class LaptopRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'type'=>'required',
-            'ram'=>'required',
-            'ssd'=>'required',
-            'processor_type'=>'required',
-            'processor_speed'=>'required',
-            'display_size_inch'=>'required',
-            'display_size_sm'=>'required',
-            'display_type'=>'required',
-            'display_resolution'=>'required',
-            'description'=>'required'
+            'name'=>'',
+            'title'=>'',
+            'price'=>'',
+            'discount'=>'',
+            'type'=>'',
+            'ram'=>'',
+            'ssd'=>'',
+            'processor_type'=>'',
+            'processor_speed'=>'',
+            'display_size_inch'=>'',
+            'display_size_sm'=>'',
+            'display_type'=>'',
+            'display_resolution'=>'',
+            'description'=>''
         ];
     }
 
